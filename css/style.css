@@ -12,7 +12,11 @@ body {
 .header {
     padding: 80px;
     text-align: center;
-    background: url(C:/Users/Kaique/OneDrive/meus-codigos/lp-code-stalkers/fundo-home.jpeg);
+    background: url("../fundo-home.jpeg");/*  no-repeat center top;  */
+    /* background-size: cover;  */
+    height:100vh;
+    width: 100%;
+    height: auto;
     color: white;
 }
 
@@ -24,17 +28,18 @@ body {
 /* Style the top navigation bar */
 .navbar {
     overflow: hidden;
-    background-color: #333;
+    background-color: #999999;
 }
 
 /* Style the navigation bar links */
 .navbar a {
     float: left;
     display: block;
-    color: white;
+    color: black;
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
+    /* font-weight: bold; */
 }
 
 /* Right-aligned link */
@@ -73,10 +78,15 @@ body {
     padding: 20px;
 }
 
-.imagem-processador {
+.imagens-padrao {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+#tela {
+    height: 700px;
+    width: auto;
 }
 
 /* Fake image, just for this example */
@@ -115,16 +125,44 @@ body {
 
 
 
+.container1 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    }
+.box1 {
+    width: 600px;
+    height: 600px;
+    background: #fff;
+}
 
 
 
 
+
+
+
+
+
+
+#contato { 
+    margin-left: 5px;
+}
 
 form {
     margin: 40px 0;
 }
 
-form label, form legend {
+form label {
+    display: block;
+    font-size: 16px;
+    margin: 0 0 10px;
+}
+
+form legend {
     display: block;
     font-size: 20px;
     margin: 0 0 10px;
@@ -134,7 +172,7 @@ form label, form legend {
     display: block;
     margin: 0 0 20px;
     padding: 10px 25px;
-    width: 50%
+    width: 80%
 }
 
 fieldset {
@@ -142,9 +180,9 @@ fieldset {
 }
 
 .enviar {
-    width: 40%;
+    width: 80%;
     padding: 15px 0;
-    background: orange;
+    background: #5384dc;
     color: white;
     font-weight: bold;
     font-size: 18px;
@@ -155,6 +193,6 @@ fieldset {
 }
 
 .enviar:hover {
-    background: darkorange;
+    background: #3162ba;
     transform: scale(1.2);
 }

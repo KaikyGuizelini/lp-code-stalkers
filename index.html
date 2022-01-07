@@ -1,74 +1,91 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-    <head>
-        <title>Landing Page iCode</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="C:\Users\Kaique\OneDrive\meus-codigos\lp-code-stalkers\reset.cs">
-        <link rel="stylesheet" href="C:\Users\Kaique\OneDrive\meus-codigos\lp-code-stalkers\css\style.css">
-    </head>
+<head>
+    <title>Landing Page iCode</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css\reset.css">
+    <link rel="stylesheet" href="css\style.css">
+</head>
 
-    <body>
+<body>
 
-        <div class="navbar">
-            <img src="" alt="Logo iCode cinza" class="logo-escura">
-            <a href="#teste" class="right">Saiba mais</a>
-            <a href="#" class="right">Ficha Técnica</a>
-            <a href="#Home" class="right">Sobre nós</a>
-        </div>
+    <div class="navbar">
+        <img src="../logo-cinza.png" alt="Logo iCode escura" class="logo-escura">
+        <a href="#contato" class="right">Como obter?</a>
+        <a href="#" class="right">Ficha Técnica</a>
+        <a href="#Home" class="right">Sobre nós</a>
+    </div>
 
-        <div id="Home" class="header">
-            <h1>iCode</h1>
-            <p>A tecnologia para desenvolver nas suas mãos.</p>
-        </div>
+    <div id="Home" class="header">
+        <h1>iCode</h1>
+        <p>A tecnologia para desenvolver em suas mãos.</p>
+    </div>
 
-        <div class="row">
-            
-            <div class="main">
-                <p>iCode é o celular perfeito para quem quer um top de linha nas mãos, pois 
-                    conta com o melhor processador do mercado, o Qualcomm Snapdragon 888 Plus </p>
-                <img src="C:\Users\Kaique\OneDrive\meus-codigos\lp-code-stalkers\processador.jpeg" 
-                alt="Foto do aparelho mostrando costas e frente" class="imagem-processador">
-                <p>Some text..</p>
-                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco.</p>
-                <br>
-                <h2>TITLE HEADING</h2>
-                <h5>Title description, Sep 2, 2017</h5>
-                <div class="fakeimg" style="height:200px;">Image</div>
-                <p>Some text..</p>
-                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco.</p>
-            </div>
-        </div>
+    <div class="row">
 
-        <form id="teste">
-            <label for="nome-sobrenome">Nome e Sobrenome</label>
-            <input type="text" id="nome-sobrenome" class="input-padrao" required>
+        <div class="main">
+            <p>iCode é o celular perfeito para quem quer um top de linha nas mãos, pois
+                conta com o melhor processador do mercado, o Qualcomm Snapdragon 888 Plus </p>
+            <img src="processador.jpeg" alt="Foto do aparelho ligado mostrando costas e frente" class="imagens-padrao">
+            <br><br><br>
 
-            <label for="email">Email</label>
-            <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
-
-            <label for="telefone">Telefone</label>
-            <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+            <p>Um celular com câmera quádrupla, conta com uma câmera principal de 108 megapixels e
+                gravação em até 8K em 60fps, uma câmera grande angular, uma lente com zoom de 4x e uma
+                câmera macro de 10 megapixels.</p>
+            <img src="camera.jpeg" alt="Imagem enfatizando a camera do dispositivo" class="imagens-padrao">
+            <br><br><br>
                 
-            <fieldset>
-                <legend>Como prefere o nosso contato?</legend>
-                <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>
+            <p>Uma tela Super AMOLED, com a melhor proteção do mercado, a Gorilla Glass Victus, 
+                com 6,7 polegadas, resolução Full HD e uma taxa de atualização de 144hz!</p>
+            <img src="../tela.png" alt="Foto do aparelho ligado mostrando costas e frente" class="imagens-padrao" id="tela">
+            <br><br><br>
 
-                <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>Whatsapp</label>
-            </fieldset>
+            <p>Uma memória imensamente absurda, 1T de memória interna e 12GB de memória RAM, o desafio é encher essa memória.</p>
+            <img src="../armazenamento.jpeg" alt="Foto do aparelho desligado mostrando costas e frente" class="imagens-padrao">
+            <br><br><br>
 
-            <input type="submit" value="Enviar formulário" class="enviar">
-        </form>
-
-        <div class="footer">
-            <h2>Footer</h2>
+            <p>Uma bateria de 6000mh, que pode durar até 2 dias fora do carregador, tem suporta 
+                carregamento de 40v e conta com suporte para carregamento sem fio de até 25v.</p>
+            <img src="../bateria.jpeg" alt="Foto do aparelho ligado mostrando costas e frente" class="imagens-padrao">
+            <br><br><br>
         </div>
+    </div>
 
-    </body>
+    <div class="container1">
+        <div class="box1">
+            <form id="contato">
+                <legend>Nos dê suas informações de contato para podermos negociar.</legend>
+                <br>
+                <label for="nome-sobrenome">Nome e Sobrenome</label>
+                <input type="text" id="nome-sobrenome" class="input-padrao" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+
+                <fieldset>
+                    <legend>Como prefere o nosso contato?</legend>
+                    <label for="radio-email"><input type="radio" name="contato" value="email"
+                            id="radio-email">Email</label>
+                    <label for="radio-telefone"><input type="radio" name="contato" value="telefone"
+                            id="radio-telefone">Telefone</label>
+                    <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp"
+                            checked>Whatsapp</label>
+                </fieldset>
+
+                <input type="submit" value="Enviar formulário" class="enviar">
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h2>Footer</h2>
+    </div>
+
+</body>
 
 </html>
