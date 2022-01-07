@@ -1,91 +1,154 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <title>Landing Page iCode</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css\reset.css">
-    <link rel="stylesheet" href="css\style.css">
-</head>
-
-<body>
-
-    <div class="navbar">
-        <img src="./logo-cinza.png" alt="Logo iCode escura" class="logo-escura">
-        <a href="#contato" class="right">Como obter?</a>
-        <a href="#" class="right">Ficha Técnica</a>
-        <a href="#Home" class="right">Sobre nós</a>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>iCode</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="navbar">
+      <a href="#default" id="logo">CompanyLogo</a>
+      <nav id="navbar-right">
+        <a class="active" href="#home">Home</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+      </nav>
     </div>
 
-    <div id="Home" class="header">
-        <h1>iCode</h1>
-        <p>A tecnologia para desenvolver em suas mãos.</p>
-    </div>
+    <div style="margin-top: 70px"></div>
 
-    <div class="row">
-
-        <div class="main">
-            <p>iCode é o celular perfeito para quem quer um top de linha nas mãos, pois
-                conta com o melhor processador do mercado, o Qualcomm Snapdragon 888 Plus </p>
-            <img src="./processador.jpeg" alt="Foto do aparelho ligado mostrando costas e frente" class="imagens-padrao">
-            <br><br><br>
-
-            <p>Um celular com câmera quádrupla, conta com uma câmera principal de 108 megapixels e
-                gravação em até 8K em 60fps, uma câmera grande angular, uma lente com zoom de 4x e uma
-                câmera macro de 10 megapixels.</p>
-            <img src="./camera.jpeg" alt="Imagem enfatizando a camera do dispositivo" class="imagens-padrao">
-            <br><br><br>
-                
-            <p>Uma tela Super AMOLED, com a melhor proteção do mercado, a Gorilla Glass Victus, 
-                com 6,7 polegadas, resolução Full HD e uma taxa de atualização de 144hz!</p>
-            <img src="./tela.png" alt="Foto do aparelho ligado mostrando costas e frente" class="imagens-padrao" id="tela">
-            <br><br><br>
-
-            <p>Uma memória imensamente absurda, 1T de memória interna e 12GB de memória RAM, o desafio é encher essa memória.</p>
-            <img src="./armazenamento.jpeg" alt="Foto do aparelho desligado mostrando costas e frente" class="imagens-padrao">
-            <br><br><br>
-
-            <p>Uma bateria de 6000mh, que pode durar até 2 dias fora do carregador, tem suporta 
-                carregamento de 40v e conta com suporte para carregamento sem fio de até 25v.</p>
-            <img src="./bateria.jpeg" alt="Foto do aparelho ligado mostrando costas e frente" class="imagens-padrao">
-            <br><br><br>
+    <!-- MAIN (Center website) -->
+    <div class="main">
+      <div class="hero-image">
+        <div class="hero-text">
+          <h1 style="font-size: 50px">I am John Doe</h1>
+          <p>And I'm a Photographer</p>
+          <button>Hire me</button>
         </div>
-    </div>
+      </div>
 
-    <div class="container1">
-        <div class="box1">
-            <form id="contato">
-                <legend>Nos dê suas informações de contato para podermos negociar.</legend>
-                <br>
-                <label for="nome-sobrenome">Nome e Sobrenome</label>
-                <input type="text" id="nome-sobrenome" class="input-padrao" required>
+      <div class="row">
+        <div class="content">
+          <button class="tablink" onclick="openPage('camera', this, 'red')">
+            Câmera
+          </button>
+          <button
+            class="tablink"
+            onclick="openPage('display', this, 'green')"
+            id="defaultOpen"
+          >
+            Display
+          </button>
+          <button class="tablink" onclick="openPage('memoria', this, 'blue')">
+            Memória
+          </button>
+          <button class="tablink" onclick="openPage('bateria', this, 'orange')">
+            Bateria
+          </button>
 
-                <label for="email">Email</label>
-                <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+          <div id="camera" class="tabcontent">
+            <h3>Câmera</h3>
+            <p>Câmera...</p>
+          </div>
 
-                <label for="telefone">Telefone</label>
-                <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+          <div id="display" class="tabcontent">
+            <h3>Display</h3>
+            <p>Display...</p>
+          </div>
 
-                <fieldset>
-                    <legend>Como prefere o nosso contato?</legend>
-                    <label for="radio-email"><input type="radio" name="contato" value="email"
-                            id="radio-email">Email</label>
-                    <label for="radio-telefone"><input type="radio" name="contato" value="telefone"
-                            id="radio-telefone">Telefone</label>
-                    <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp"
-                            checked>Whatsapp</label>
-                </fieldset>
+          <div id="memoria" class="tabcontent">
+            <h3>Memória</h3>
+            <p>Memória...</p>
+          </div>
 
-                <input type="submit" value="Enviar formulário" class="enviar">
+          <div id="bateria" class="tabcontent">
+            <h3>Bateria</h3>
+            <p>Bateria...</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-2">
+          <div class="content">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1280px-Image_created_with_a_mobile_phone.png"
+              alt="Nature"
+              style="width: 100%"
+            />
+            <h3>My Work</h3>
+            <p>
+              Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus
+              necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor
+              sit amet, tempor prodesset eos no.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-2">
+          <div class="content">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1280px-Image_created_with_a_mobile_phone.png"
+              alt="Mountains"
+              style="width: 100%"
+            />
+            <h3>My Work</h3>
+            <p>
+              Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus
+              necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor
+              sit amet, tempor prodesset eos no.
+            </p>
+          </div>
+        </div>
+        <!-- END GRID -->
+      </div>
+
+      <div class="row">
+        <div class="content">
+          <button class="accordion">Section 1</button>
+          <div class="panel">
+            <p>Lorem ipsum...</p>
+          </div>
+
+          <button class="accordion">Section 2</button>
+          <div class="panel">
+            <p>Lorem ipsum...</p>
+          </div>
+
+          <button class="accordion">Section 3</button>
+          <div class="panel">
+            <p>Lorem ipsum...</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="content">
+          <div class="bg-img">
+            <form action="/action_page.php" class="container">
+          
+              <label for="nome"><b>Nome</b></label>
+              <input type="text" placeholder="Nome completo" name="nome" required>
+          
+              <label for="email"><b>E-mail</b></label>
+              <input type="email" placeholder="email@email.com" name="email" required>
+          
+              <button type="submit" class="btn">Cadastrar</button>
             </form>
+          </div>
         </div>
+      </div>
+
+      <footer class="row">
+        <div class="content">
+          <h3>Rodapé</h3>
+        </div>
+      </footer>
     </div>
 
-    <div class="footer">
-        <h2>Footer</h2>
-    </div>
-
-</body>
-
+    <script src="./scripts/menu-caracteristicas.js"></script>
+    <script src="./scripts/menu-accordiong.js"></script>
+    <script src="./scripts/menu-topo.js"></script>
+  </body>
 </html>
