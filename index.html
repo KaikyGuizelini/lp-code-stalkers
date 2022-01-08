@@ -1,80 +1,83 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>iCode</title>
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <div id="navbar">
-      <a href="#default" id="logo"><img src="./img/logo-cinza.png" class="logo-escura" /></a>
-      <nav id="navbar-right">
-        <a class="active" href="#home">Home</a>
-        <a href="#contact">Ficha Técnica</a>
-        <a href="#about">Pré-Venda</a>
-      </nav>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>iCode</title>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div id="navbar">
+    <a href="#default" id="logo"><img src="./img/logo-cinza.png" class="logo-escura" /></a>
+    <nav id="navbar-right">
+      <a class="active" href="#home">Home</a>
+      <a href="#contact">Ficha Técnica</a>
+      <a href="#about">Pré-Venda</a>
+    </nav>
+  </div>
+
+  <div style="margin-top: 70px"></div>
+
+  <!-- MAIN (Center website) -->
+  <div class="main">
+    
+    <div class="banner-image">
+      <div class="banner-text">
+        <h1 style="font-size: 50px">iCode</h1>
+        <p>A tecnologia perfeita para codar em suas mãos!</p>
+      </div>
     </div>
 
-    <div style="margin-top: 70px"></div>
+    <div class="row" id="caracteristicas">
+      <div class="content">
+        <div class="tablink-grop">
+          <button class="tablink" onclick="openPage('camera', this)" id="defaultOpen">
+            Câmera
+          </button>
+          <button class="tablink" onclick="openPage('display', this)">
+            Display
+          </button>
+          <button class="tablink" onclick="openPage('memoria', this)">
+            Memória
+          </button>
+          <button class="tablink" onclick="openPage('bateria', this)">
+            Bateria
+          </button>
+        </div>
 
-    <!-- MAIN (Center website) -->
-    <div class="main">
-      <div class="hero-image">
-        <div class="hero-text">
-          <h1 style="font-size: 50px">iCode</h1>
-          <p>A tecnologia perfeita para codar em suas mãos!</p>
+        <div id="camera" class="tabcontent">
+          <p>Um celular com câmera quádrupla, conta com uma câmera principal de 108 megapixels
+            e gravação em até 8K em 60fps, uma câmera grande angular, uma lente com zoom de 4x e
+            uma câmera macro de 10 megapixels.</p>
+        </div>
+
+        <div id="display" class="tabcontent">
+          <p>Uma tela Super AMOLED, com a melhor proteção do mercado, a Gorilla Glass Victus,
+            com 6,7 polegadas, resolução Full HD e uma taxa de atualização de 144hz.</p>
+        </div>
+
+        <div id="memoria" class="tabcontent">
+          <h3>Memória</h3>
+          <p>Memória...</p>
+        </div>
+
+        <div id="bateria" class="tabcontent">
+          <h3>Bateria</h3>
+          <p>Bateria...</p>
         </div>
       </div>
+    </div>
 
-      <div class="row" id="caracteristicas">
-        <div class="content">
-          <div class="tablink-grop">
-            <button class="tablink" onclick="openPage('camera', this)" id="defaultOpen">
-              Câmera
-            </button>
-            <button class="tablink" onclick="openPage('display', this)">
-              Display
-            </button>
-            <button class="tablink" onclick="openPage('memoria', this)">
-              Memória
-            </button>
-            <button class="tablink" onclick="openPage('bateria', this)">
-              Bateria
-            </button>
-          </div>
+    <div class="row">
+      <div class="content">
 
-          <div id="camera" class="tabcontent">
-            <p>Um celular com câmera quádrupla, conta com uma câmera principal de 108 megapixels 
-              e gravação em até 8K em 60fps, uma câmera grande angular, uma lente com zoom de 4x e 
-              uma câmera macro de 10 megapixels.</p>
-          </div>
-
-          <div id="display" class="tabcontent">
-            <p>Uma tela Super AMOLED, com a melhor proteção do mercado, a Gorilla Glass Victus, 
-              com 6,7 polegadas, resolução Full HD e uma taxa de atualização de 144hz.</p>
-          </div>
-
-          <div id="memoria" class="tabcontent">
-            <h3>Memória</h3>
-            <p>Memória...</p>
-          </div>
-
-          <div id="bateria" class="tabcontent">
-            <h3>Bateria</h3>
-            <p>Bateria...</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
         <div class="col-2">
           <div class="content">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1280px-Image_created_with_a_mobile_phone.png"
-              alt="Nature"
-              style="width: 100%"
-            />
+              alt="Nature" style="width: 100%" />
             <h3>My Work</h3>
             <p>
               Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus
@@ -88,9 +91,7 @@
           <div class="content">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1280px-Image_created_with_a_mobile_phone.png"
-              alt="Mountains"
-              style="width: 100%"
-            />
+              alt="Mountains" style="width: 100%" />
             <h3>My Work</h3>
             <p>
               Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus
@@ -99,54 +100,55 @@
             </p>
           </div>
         </div>
-        <!-- END GRID -->
       </div>
-
-      <div class="row">
-        <div class="content">
-          <button class="accordion">Section 1</button>
-          <div class="panel">
-            <p>Lorem ipsum...</p>
-          </div>
-
-          <button class="accordion">Section 2</button>
-          <div class="panel">
-            <p>Lorem ipsum...</p>
-          </div>
-
-          <button class="accordion">Section 3</button>
-          <div class="panel">
-            <p>Lorem ipsum...</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="content">
-          <div class="bg-img">
-            <form action="/action_page.php" class="container">
-          
-              <label for="nome"><b>Nome</b></label>
-              <input type="text" placeholder="Nome completo" name="nome" required>
-          
-              <label for="email"><b>E-mail</b></label>
-              <input type="email" placeholder="email@email.com" name="email" required>
-          
-              <button type="submit" class="btn">Cadastrar</button>
-            </form>
-          </div>
-        </div>
-      </div>
-
-      <footer class="row">
-        <div class="content">
-          <h3>Rodapé</h3>
-        </div>
-      </footer>
     </div>
 
-    <script src="./scripts/menu-caracteristicas.js"></script>
-    <script src="./scripts/menu-accordiong.js"></script>
-    <script src="./scripts/menu-topo.js"></script>
-  </body>
+    <div class="row">
+      <div class="content">
+        <button class="accordion">Section 1</button>
+        <div class="panel">
+          <p>Lorem ipsum...</p>
+        </div>
+
+        <button class="accordion">Section 2</button>
+        <div class="panel">
+          <p>Lorem ipsum...</p>
+        </div>
+
+        <button class="accordion">Section 3</button>
+        <div class="panel">
+          <p>Lorem ipsum...</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="content">
+        <div class="bg-img">
+          <form action="/action_page.php" class="container">
+
+            <label for="nome"><b>Nome</b></label>
+            <input type="text" placeholder="Nome completo" name="nome" required>
+
+            <label for="email"><b>E-mail</b></label>
+            <input type="email" placeholder="email@email.com" name="email" required>
+
+            <button type="submit" class="btn">Cadastrar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer class="row">
+      <div class="content">
+        <h3>Rodapé</h3>
+      </div>
+    </footer>
+  </div>
+
+  <script src="./scripts/menu-caracteristicas.js"></script>
+  <script src="./scripts/menu-accordiong.js"></script>
+  <script src="./scripts/menu-topo.js"></script>
+</body>
+
 </html>
