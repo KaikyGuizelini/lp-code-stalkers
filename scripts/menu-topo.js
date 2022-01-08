@@ -5,7 +5,7 @@ window.onscroll = function () {
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
     document.getElementById("navbar").style.padding = "0px";
-    document.getElementById("logo").style.height = "22px";
+    document.getElementById("logo").style.height = "15px";
     alterarFonte("12px");
   } else {
     document.getElementById("navbar").style.padding = "10px";
