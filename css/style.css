@@ -1,18 +1,27 @@
 @font-face {
-  font-family: Poppins;
+  font-family: Poppins-medium;
   src: url(../fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family: Poppins-regular;
+  src: url(../fonts/Poppins-Regular.ttf);
 }
 
 * {
   box-sizing: border-box;
+  font-family: Poppins-regular;
 }
 
 body,
 html {
-  background: #0d1418;
   height: 100%;
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  background: white;
+  font-family: Poppins-regular;
 }
 
 .main {
@@ -27,6 +36,7 @@ h1 {
 
 .row {
   margin: 0px;
+  background: #0d1418;
 }
 
 .row,
@@ -48,11 +58,13 @@ h1 {
 .col-3 {
   float: left;
   width: calc(100% / 3);
+  max-width: calc(960px / 3);
 }
 
 .col-4 {
   float: left;
   width: calc(100% / 4);
+  max-width: calc(960px / 4);
 }
 
 .row:after {
@@ -156,6 +168,7 @@ h1 {
 
 /* Menu topo */
 #navbar {
+  font-family: Poppins-medium;
   overflow: hidden;
   background-color: #181c24;
   padding: 10px;
@@ -168,7 +181,6 @@ h1 {
 }
 
 #navbar a {
-  font-family: Poppins;
   float: left;
   color: #89909b;
   text-align: center;
@@ -246,7 +258,6 @@ h1 {
 
 /* Formulario */
 .bg-img {
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1280px-Image_created_with_a_mobile_phone.png");
   min-height: 380px;
   background-position: center;
   background-repeat: no-repeat;
@@ -270,6 +281,7 @@ input[type="email"] {
   margin: 5px 0 22px 0;
   border: none;
   background: #f1f1f1;
+  border-radius: 8px;
 }
 
 input[type="text"]:focus,
@@ -279,13 +291,14 @@ input[type="email"]:focus {
 }
 
 .btn {
-  background-color: #04aa6d;
+  background-color: #143c2c;
   color: white;
   padding: 16px 20px;
   border: none;
   cursor: pointer;
   width: 100%;
   opacity: 0.9;
+  border-radius: 8px;
 }
 
 .btn:hover {
@@ -354,4 +367,22 @@ footer .content {
 .direitos p:last-child {
   border-right: none;
   padding-right: 0;
+}
+
+/* Pre-venda */
+#pre-venda {
+  background: transparent;
+  padding: 30px 0px;
+}
+
+.form-pre-venda {
+  display: flex;
+  justify-content: center;
+}
+
+.valor-pre-venda{
+  border: 2px solid #143c2c;
+  border-radius: 20px;
+  height: 120px;
+  margin-right: 20px;
 }
