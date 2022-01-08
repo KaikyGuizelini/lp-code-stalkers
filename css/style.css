@@ -152,7 +152,7 @@ h1 {
 /* Menu topo */
 #navbar {
   overflow: hidden;
-  background-color: #f1f1f1;
+  background-color: #181c24;
   padding: 10px;
   margin-bottom: 70px;
   transition: 0.4s;
@@ -160,17 +160,23 @@ h1 {
   width: 100%;
   top: 0px;
   z-index: 99;
+
 }
 
 #navbar a {
   float: left;
-  color: black;
+  color: #89909b;
   text-align: center;
   padding: 10px;
   text-decoration: none;
   font-size: 14px;
   line-height: 25px;
   border-radius: 4px;
+}
+
+.navbar-content {
+  max-width: 960px;
+  margin: 0px auto;
 }
 
 .logo-escura {
@@ -189,8 +195,8 @@ h1 {
 }
 
 #navbar a.active {
-  background-color: dodgerblue;
-  color: white;
+  color: ;
+
 }
 
 #navbar-right {
@@ -224,9 +230,9 @@ h1 {
   transition: 0.4s;
 }
 
-.active,
+,.active
 .accordion:hover {
-  background-color: #ccc;
+  background-color: transparent;
 }
 
 .panel {
