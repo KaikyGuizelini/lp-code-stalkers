@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Poppins;
+  src: url(../fonts/Poppins-Medium.ttf);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -160,10 +165,10 @@ h1 {
   width: 100%;
   top: 0px;
   z-index: 99;
-
 }
 
 #navbar a {
+  font-family: Poppins;
   float: left;
   color: #89909b;
   text-align: center;
@@ -172,31 +177,28 @@ h1 {
   font-size: 14px;
   line-height: 25px;
   border-radius: 4px;
+  margin: 0px 7px;
 }
 
 .navbar-content {
   max-width: 960px;
   margin: 0px auto;
-}
-
-.logo-escura {
-  width: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #navbar #logo {
-  font-size: 16px;
-  font-weight: bold;
   transition: 0.4s;
+  height: 26px;
 }
 
 #navbar a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: #383e42;
 }
 
 #navbar a.active {
-  color: ;
-
+  background-color: transparent;
 }
 
 #navbar-right {
@@ -230,7 +232,7 @@ h1 {
   transition: 0.4s;
 }
 
-,.active
+.active
 .accordion:hover {
   background-color: transparent;
 }
