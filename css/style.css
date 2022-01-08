@@ -4,6 +4,7 @@
 
 body,
 html {
+  background: #0d1418;
   height: 100%;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -58,7 +59,7 @@ h1 {
 }
 
 .content {
-  background-color: white;
+ background-color: transparent; /* era branco antes  */
   padding: 10px;
 }
 
@@ -77,7 +78,7 @@ h1 {
 /* Banner principal */
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../img/photographer.jpg");
+    url("../img/fundo-home.jpeg");
   height: 50%;
   background-position: center;
   background-repeat: no-repeat;
@@ -112,16 +113,29 @@ h1 {
 }
 
 /* Menu de caracteristicas */
+
+#caracteristicas {
+  margin: 50px 0;
+}
+
+.tablink-grop {
+  display: flex;
+  justify-content: space-between;
+}
+
 .tablink {
-  background-color: #555;
+  background-color: #383e42;
   color: white;
   float: left;
-  border: none;
+  border: 1px solid #707c78;
   outline: none;
   cursor: pointer;
   padding: 14px 16px;
   font-size: 17px;
-  width: calc(100% / 4);
+  width: calc((100% / 4) - 10px);
+  border-radius: 4px;
+  box-shadow: 4px 3px 5px #143c2c;
+  ;
 }
 
 .tablink:hover {
@@ -129,24 +143,27 @@ h1 {
 }
 
 .tabcontent {
+  background: #172229;
   color: white;
   display: none;
   padding: 30px 20px;
   height: 100%;
+  margin-top: 10px;
+  border-radius: 4px;
 }
 
-#camera {
-  background-color: red;
+/* #camera {
+  background-color: ;
 }
 #display {
-  background-color: green;
+  background-color: ;
 }
 #memoria {
-  background-color: blue;
+  background-color: ;
 }
 #bateria {
-  background-color: orange;
-}
+  background-color: ;
+} */
 
 /* Menu topo */
 #navbar {
@@ -170,6 +187,10 @@ h1 {
   font-size: 14px;
   line-height: 25px;
   border-radius: 4px;
+}
+
+.logo-escura {
+  width: 100px;
 }
 
 #navbar #logo {
