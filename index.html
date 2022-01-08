@@ -8,11 +8,11 @@
   </head>
   <body>
     <div id="navbar">
-      <a href="#default" id="logo">CompanyLogo</a>
+      <a href="#default" id="logo"><img src="./img/logo-cinza.png" class="logo-escura" /></a>
       <nav id="navbar-right">
         <a class="active" href="#home">Home</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
+        <a href="#contact">Ficha Técnica</a>
+        <a href="#about">Pré-Venda</a>
       </nav>
     </div>
 
@@ -22,39 +22,37 @@
     <div class="main">
       <div class="hero-image">
         <div class="hero-text">
-          <h1 style="font-size: 50px">I am John Doe</h1>
-          <p>And I'm a Photographer</p>
-          <button>Hire me</button>
+          <h1 style="font-size: 50px">iCode</h1>
+          <p>A tecnologia perfeita para codar em suas mãos!</p>
         </div>
       </div>
 
-      <div class="row">
+      <div class="row" id="caracteristicas">
         <div class="content">
-          <button class="tablink" onclick="openPage('camera', this, 'red')">
-            Câmera
-          </button>
-          <button
-            class="tablink"
-            onclick="openPage('display', this, 'green')"
-            id="defaultOpen"
-          >
-            Display
-          </button>
-          <button class="tablink" onclick="openPage('memoria', this, 'blue')">
-            Memória
-          </button>
-          <button class="tablink" onclick="openPage('bateria', this, 'orange')">
-            Bateria
-          </button>
+          <div class="tablink-grop">
+            <button class="tablink" onclick="openPage('camera', this)" id="defaultOpen">
+              Câmera
+            </button>
+            <button class="tablink" onclick="openPage('display', this)">
+              Display
+            </button>
+            <button class="tablink" onclick="openPage('memoria', this)">
+              Memória
+            </button>
+            <button class="tablink" onclick="openPage('bateria', this)">
+              Bateria
+            </button>
+          </div>
 
           <div id="camera" class="tabcontent">
-            <h3>Câmera</h3>
-            <p>Câmera...</p>
+            <p>Um celular com câmera quádrupla, conta com uma câmera principal de 108 megapixels 
+              e gravação em até 8K em 60fps, uma câmera grande angular, uma lente com zoom de 4x e 
+              uma câmera macro de 10 megapixels.</p>
           </div>
 
           <div id="display" class="tabcontent">
-            <h3>Display</h3>
-            <p>Display...</p>
+            <p>Uma tela Super AMOLED, com a melhor proteção do mercado, a Gorilla Glass Victus, 
+              com 6,7 polegadas, resolução Full HD e uma taxa de atualização de 144hz.</p>
           </div>
 
           <div id="memoria" class="tabcontent">
