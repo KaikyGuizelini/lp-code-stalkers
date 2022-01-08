@@ -5,9 +5,19 @@ window.onscroll = function () {
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
     document.getElementById("navbar").style.padding = "0px";
-    document.getElementById("logo").style.fontSize = "14px";
+    document.getElementById("logo").style.height = "22px";
+    alterarFonte("12px");
   } else {
     document.getElementById("navbar").style.padding = "10px";
-    document.getElementById("logo").style.fontSize = "16px";
+    document.getElementById("logo").style.height = "26px";
+    alterarFonte("14px");
+  }
+}
+
+function alterarFonte(size) {
+  var x, i;
+  x = document.querySelectorAll("#navbar a");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.fontSize = size;
   }
 }
