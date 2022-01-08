@@ -150,7 +150,7 @@ h1 {
   display: none;
   padding: 30px 20px;
   height: 100%;
-  margin-top: 10px;
+  margin-top: 15px; /* antes estava 10px */
   border-radius: 4px;
 }
 
@@ -290,4 +290,69 @@ input[type="email"]:focus {
 
 .btn:hover {
   opacity: 1;
+}
+
+/* Rodapé */
+footer { 
+  background-color: #181c24;
+  height: 150px;
+  width: 100%;
+  text-align: center;
+}
+
+footer .content {
+  padding: 30px 0;
+}
+
+.logo-rodape {
+  height: 33px;
+  margin-bottom: 25px;
+}
+
+.redes-sociais li {
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  border: 1px solid white;
+  border-radius: 100%;
+  padding-top: 10px;
+}
+
+.redes-sociais {
+  text-align: center;
+
+}
+
+.redes-sociais a {
+  margin-right: 7px;
+  padding: 9px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #2f3944;
+  border-radius: 200px;
+  background-color: transparent;
+  max-width: 100%;
+  display: inline-block;
+}
+
+.redes-sociais a img {
+  width: 20px;
+}
+
+.direitos {
+  background: white;
+  width: 100%;
+}
+
+.direitos p {
+  display: inline-block;
+  border-right: 1px solid #222222;
+  padding-right: 5px;
+  color: #222222;
+  font-size: 12px;
+}
+
+.direitos p:last-child {
+  border-right: none;
+  padding-right: 0;
 }
