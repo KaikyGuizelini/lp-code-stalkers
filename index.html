@@ -10,29 +10,30 @@
 
 <body>
 
+  <!-- Menu topo -->
   <div id="navbar">
     <div class="navbar-content">
-      <img src="./img/logo-cinza-claro.png" id="logo" />
+      <a href="#top" id="logo"><img src="./img/logo-cinza-claro.png" tabindex="0" /></a>
       <nav id="navbar-right">
-        <a href="#caracteristicas">ficha técnica</a>
-        <a href="#galeria">galeria</a>
-        <a href="#perguntas-frequentes">perguntas frequentes</a>
-        <a href="#pre-venda">pré-venda</a>
+        <a href="#caracteristicas" tabindex="1">ficha técnica</a>
+        <a href="#galeria" tabindex="2">galeria</a>
+        <a href="#perguntas-frequentes" tabindex="3">perguntas frequentes</a>
+        <a href="#pre-venda" tabindex="4">pré-venda</a>
       </nav>
     </div>
   </div>
 
-  <div style="margin-top: 65px"></div>
+  <div class="main"  style="margin-top: 65px">
 
-  <div class="main">
-
-    <div class="banner-image">
+    <!-- Banner topo -->
+    <div id="topo" class="banner-image">
       <div class="banner-text">
         <h1 style="font-size: 50px">iCode</h1>
         <p>A tecnologia perfeita para codar em suas mãos!</p>
       </div>
     </div>
 
+    <!-- Ficha técnica -->
     <div class="row" id="caracteristicas">
       <div class="content">
         <div class="tablink-grop">
@@ -72,6 +73,7 @@
       </div>
     </div>
 
+    <!-- Galeria -->
     <div class="row" id="galeria">
       <div class="content">
 
@@ -93,7 +95,7 @@
           <div class="content">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1280px-Image_created_with_a_mobile_phone.png"
-              alt="Mountains" style="width: 100%" />
+              alt="Nature" style="width: 100%" />
             <h3>My Work</h3>
             <p>
               Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus
@@ -102,29 +104,37 @@
             </p>
           </div>
         </div>
+
       </div>
     </div>
 
+    <!-- Perguntas Frequentes -->
     <div class="row" id="perguntas-frequentes">
       <div class="content">
         <button class="accordion">Section 1</button>
         <div class="panel">
-          <p>Lorem ipsum...</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.</p>
         </div>
 
         <button class="accordion">Section 2</button>
         <div class="panel">
-          <p>Lorem ipsum...</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.</p>
         </div>
 
         <button class="accordion">Section 3</button>
         <div class="panel">
-          <p>Lorem ipsum...</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.</p>
         </div>
       </div>
     </div>
 
-<!-- alteracao de formulario de contato -->
+    <!-- Pré-venda -->
     <div class="row" id="pre-venda">
       <div class="content">
         <div class="col-2">
@@ -136,20 +146,21 @@
 
         <div class="col-2">
           <div class="content form-pre-venda">
-              <form action="#">
-                <input type="text" placeholder="Nome completo" name="nome" required>
-                <input type="email" placeholder="email@email.com" name="email" required>
-                <button type="submit" class="btn">Cadastrar</button>
-              </form>
+            <form action="#">
+              <input type="text" placeholder="Nome completo" name="nome" required>
+              <input type="email" placeholder="email@email.com" name="email" required>
+              <button type="submit" class="btn">Cadastrar</button>
+            </form>
           </div>
         </div>
       </div>
     </div>
-    
+
+    <!-- Rodapé -->
     <footer class="row">
       <div class="content">
         <img src="./img/logo-cinza-claro.png" class="logo-rodape">
-        
+
         <div class="redes-sociais">
           <a href="https://www.youtube.com/">
             <img src="./img/youtube.png" alt="Youtube">
