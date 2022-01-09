@@ -15,10 +15,10 @@
     <div class="navbar-content">
       <a href="#top" id="logo"><img src="./img/logo-cinza-claro.png" tabindex="0" /></a>
       <nav id="navbar-right">
-        <a href="#caracteristicas" tabindex="1">ficha técnica</a>
-        <a href="#galeria" tabindex="2">galeria</a>
-        <a href="#perguntas-frequentes" tabindex="3">perguntas frequentes</a>
-        <a href="#pre-venda" tabindex="4">pré-venda</a>
+        <a href="#especificacoes" tabindex="1">Especificações</a>
+        <a href="#galeria" tabindex="2">Galeria</a>
+        <a href="#perguntas-frequentes" tabindex="3">Perguntas frequentes</a>
+        <a href="#pre-venda" tabindex="4">Pré-venda</a>
       </nav>
     </div>
   </div>
@@ -34,7 +34,8 @@
     </div>
 
     <!-- Ficha técnica -->
-    <div class="row" id="caracteristicas">
+    <div class="row" id="especificacoes">
+      <h1 class="titulos">Especificações</h1>
       <div class="content">
         <div class="tablink-grop">
           <button class="tablink" onclick="openPage('camera', this)" id="defaultOpen">
@@ -75,6 +76,7 @@
 
     <!-- Galeria -->
     <div class="row" id="galeria">
+      <h1 class="titulos">Galeria</h1>
       <div class="content">
 
         <div class="col-2">
@@ -110,42 +112,65 @@
 
     <!-- Perguntas Frequentes -->
     <div class="row" id="perguntas-frequentes">
+      <h1 class="titulos">Perguntas frequencias</h1>
       <div class="content">
-        <button class="accordion">Section 1</button>
+        <button class="accordion">Como funciona a garantia do celular?</button>
         <div class="panel">
+          <br>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
             ea commodo consequat.</p>
+          <br>
         </div>
 
-        <button class="accordion">Section 2</button>
+        <button class="accordion">Qual o sistema operacional do aparelho?</button>
         <div class="panel">
+          <br>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
             ea commodo consequat.</p>
+          <br>
         </div>
 
-        <button class="accordion">Section 3</button>
+        <button class="accordion">O que vem na caixa?</button>
         <div class="panel">
+          <br>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
             ea commodo consequat.</p>
+          <br>
+        </div>
+
+        <button class="accordion">Como faço para comprar?</button>
+        <div class="panel">
+          <br>
+          <p>Para comprar basta se cadastrar no formulário de pré-venda abaixo. Quando o 
+            aparelho for lançado, nós vamos de notificar por email, informando: preço, 
+            formas de pagamento, parcelamento e tempo para entrega.</p>
+          <br>
         </div>
       </div>
     </div>
 
     <!-- Pré-venda -->
     <div class="row" id="pre-venda">
+      <h1 class="titulos titulo-pre-venda">Pré-venda</h1>
       <div class="content">
-        <div class="col-2">
-          <div class="content valor-pre-venda">
+        <!-- <div class="col-3"> -->
+          <!-- <div class="content valor-pre-venda">
             <p>Saiba prioritariamente</p>
             <p>Quando iniciaremos as vendas</p>
+          </div>
+        </div> -->
+
+        <div class="col-2">
+          <div class="content form-centralizado-esquerda">
+            <img src="./img/mockup1.png" class="imagem-pre-venda" alt="">
           </div>
         </div>
 
         <div class="col-2">
-          <div class="content form-pre-venda">
+          <div class="content form-pre-venda form-centralizado-direita">
             <form action="#">
               <input type="text" placeholder="Nome completo" name="nome" required>
               <input type="email" placeholder="email@email.com" name="email" required>
@@ -176,12 +201,12 @@
           </a>
         </div>
       </div>
-      <div class="direitos">
-        <p>Política de Privacidade</p>
-        <p>Política de Venda</p>
-        <p>Avisos Legais</p>
-      </div>
     </footer>
+    <div class="direitos">
+      <p>Política de Privacidade</p>
+      <p>Política de Venda</p>
+      <p>Avisos Legais</p>
+    </div>
   </div>
 
   <script src="./scripts/menu-caracteristicas.js"></script>
