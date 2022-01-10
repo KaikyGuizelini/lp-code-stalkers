@@ -10,42 +10,48 @@
 
 <body>
 
+  <!-- Menu topo -->
   <div id="navbar">
     <div class="navbar-content">
-      <img src="./img/logo-cinza-claro.png" id="logo" />
+      <a href="#top" id="logo"><img src="./img/logo-cinza-claro.png" tabindex="0" /></a>
       <nav id="navbar-right">
-        <a href="#caracteristicas">ficha técnica</a>
-        <a href="#galeria">galeria</a>
-        <a href="#perguntas-frequentes">perguntas frequentes</a>
-        <a href="#pre-venda">pré-venda</a>
+        <a href="#especificacoes" tabindex="1">Especificações</a>
+        <a href="#galeria" tabindex="2">Galeria</a>
+        <a href="#perguntas-frequentes" tabindex="3">Perguntas frequentes</a>
+        <a href="#pre-venda" tabindex="4">Pré-venda</a>
       </nav>
     </div>
   </div>
 
-  <div style="margin-top: 65px"></div>
-
   <div class="main">
 
-    <div class="banner-image">
+    <!-- Banner topo -->
+    <div id="topo" class="banner-image">
       <div class="banner-text">
         <h1 style="font-size: 50px">iCode</h1>
         <p>A tecnologia perfeita para codar em suas mãos!</p>
       </div>
     </div>
 
-    <div class="row" id="caracteristicas">
+    <!-- Especificações -->
+    <div class="row" id="especificacoes">
+      <h1 class="titulos">Especificações</h1>
       <div class="content">
         <div class="tablink-grop">
           <button class="tablink" onclick="openPage('camera', this)" id="defaultOpen">
+            <img src="./img/camera.png" class="imagens-especificacoes" alt="">
             Câmera
           </button>
           <button class="tablink" onclick="openPage('display', this)">
+            <img src="./img/display.png" class="imagens-especificacoes" alt="">
             Display
           </button>
           <button class="tablink" onclick="openPage('memoria', this)">
+            <img src="./img/memoria.png" class="imagens-especificacoes" alt="">
             Memória
           </button>
           <button class="tablink" onclick="openPage('bateria', this)">
+            <img src="./img/bateria.png" class="imagens-especificacoes" alt="">
             Bateria
           </button>
         </div>
@@ -62,7 +68,14 @@
         </div>
 
         <div id="memoria" class="tabcontent">
-          <p>Uma memória absurda, 1T de memória interna e 12GB de memória RAM, o desafio é encher essa memória.</p>
+          <p>O celular tem um armazenamento inimaginável de 1 terabyte de memória interna que você
+            poderá ousar, guardando o quanto quiser: fotos, videos, aplicativos e muito mais. Com esse aparelho em mãos
+            você não precisará se preocupar com espaço de memória nunca mais.
+            <br><br>
+            Você pode acreditar ou não, mas o celular ainda conta com 18GB de
+            memória RAM que poderá rodar com facilidade qualquer jogo ou app de alta performance no seu celular,
+            o tipo de qualidade que só existe num iCode.
+          </p>
         </div>
 
         <div id="bateria" class="tabcontent">
@@ -72,84 +85,167 @@
       </div>
     </div>
 
+    <!-- Galeria -->
     <div class="row" id="galeria">
+      <h1 class="titulos">Câmera com qualidade prossional</h1>
       <div class="content">
 
-        <div class="col-2">
-          <div class="content">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1280px-Image_created_with_a_mobile_phone.png"
-              alt="Nature" style="width: 100%" />
-            <h3>My Work</h3>
-            <p>
-              Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus
-              necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor
-              sit amet, tempor prodesset eos no.
-            </p>
-          </div>
+        <div class="col-2 galeria-videos">
+          <div class="content content-videos">
+            <div class="col">
+              <video controls autoplay>
+                <source src="./videos/group-dancing.mp4" type="video/mp4">
+                Seu navegador não suporta ou está desabilitado para executar videos com extensão .mp4
+              </video>
+            </div>
+          
+            <div class="col galeria-videos-bottom">
+              <div class="col"></div>
+            </div>
+          </div>          
         </div>
 
-        <div class="col-2">
-          <div class="content">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1280px-Image_created_with_a_mobile_phone.png"
-              alt="Mountains" style="width: 100%" />
-            <h3>My Work</h3>
-            <p>
-              Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus
-              necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor
-              sit amet, tempor prodesset eos no.
-            </p>
+        <div class="col-2 galeria-imagens">
+          <div class="content content-galeria">
+            <div class="col-2 galeria-imagens-esq">
+              <div class="col" style="height: 360px;"></div>
+              <div class="col" style="height: 200px;"></div>
+            </div>
+
+            <div class="col-2 galeria-imagens-dir">
+              <div class="col" style="height: 200px;"></div>
+              <div class="col" style="height: 360px;"></div>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
+    <!-- Perguntas Frequentes -->
     <div class="row" id="perguntas-frequentes">
+      <h1 class="titulos">Perguntas frequentes</h1>
       <div class="content">
-        <button class="accordion">Section 1</button>
+        <button class="accordion">Como funciona a garantia do celular?</button>
         <div class="panel">
-          <p>Lorem ipsum...</p>
+          <br>
+          <p>Para o produto acima identificado, que a A CODE STALKERS LTDA
+            (Code Stalkers) disponibiliza no mercado brasileiro, é oferecida a garantia contra defeitos no material
+            e mão-de-obra, em condições normais de uso e manutenção, pelo prazo de 1 ano. Sendo 90 dias de garantia
+            legal e após isso inicia o prazo da garantia adicional que oferecemos aos nossos clientes.
+            <br><br>
+            A Garantia inicia a partir da data de aquisição ou da data da entrega do
+            produto, identificada pela Nota Fiscal de venda ao Consumidor Final do produto, emitida no Brasil
+            por um revendedor autorizado pela Code Stalkers.
+            <br><br>
+            Em ocasião de quedas, esmagamentos, sobrecarga elétrica, exposição do aparelho
+            a altas temperaturas, umidade ou líquidos; exposição do aparelho a poeira, ou ainda quando constatado
+            mau uso do aparelho, instalações, modificações ou atualizações no seu sistema operacional; abertura do
+            equipamento ou tentativa de conserto deste por terceiros que não sejam os técnicos da Code Stalkers, a
+            garantia
+            não poderá ser utilizada.
+          </p>
+          <br>
         </div>
 
-        <button class="accordion">Section 2</button>
+        <button class="accordion">Qual o sistema operacional do aparelho?</button>
         <div class="panel">
-          <p>Lorem ipsum...</p>
+          <br>
+          <p>O iCode conta com o novo Android 12
+            <br><br>
+            Suas principais novidades:
+            <br><br>
+            1. Captura de tela com rolagem
+            <br>
+            2. Pesquisas mais amplas
+            <br>
+            3. Novas configurações de privacidade
+            <br>
+            4. Fácil acesso a senhas
+            <br>
+            5. Otimização para jogos
+            <br>
+            6. Temas personalizados
+            <br>
+            7. Novos atalhos para configurações rápidas
+            <br>
+            8. Desligar câmera e microfone com um toque
+            <br>
+            9. Troca rápida das redes de Wi-Fi
+            <br>
+            10. Modo extraescuro
+            <br><br>
+            Alem disso o Android 12 conta agora com um completo recurso de
+            privacidade incluindo o novo Painel de Privacidade, que exibe de forma mais clara as permissões
+            que um aplicativo tem para acessar cada tipo de dado ou função do seu dispositivo.
+          </p>
+          <br>
         </div>
 
-        <button class="accordion">Section 3</button>
+        <button class="accordion">O que vem na caixa?</button>
         <div class="panel">
-          <p>Lorem ipsum...</p>
+          <br>
+          <p>Junto com o celular, você recebe na caixa:
+            <br>
+            - 1 Carregador TurboPower 25W com entrada USB-C
+            <br>
+            - 1 Capa protetora
+            <br>
+            - 1 Ferramenta de remoção do chip
+            <br>
+            - 1 Fone de ouvido estéreo com entrada P2
+            <br>
+            - 1 1 Cabo sincronização
+            <br>
+            - 1 Kit de manual
+          </p>
+          <br>
+        </div>
+
+        <button class="accordion">Como faço para comprar?</button>
+        <div class="panel">
+          <br>
+          <p> Quer saber as novidades da pré-venda?
+            <br><br>
+            Cadastre-se no formulário abaixo.
+            <br><br>
+            Assim que o aparelho for lançado, você será um dos primeiros a saber mais
+            sobre preço, formas de pagamento e tempo de entrega.
+            <br><br>
+            Venha ser um Code Stalker.
+          </p>
+          <br>
         </div>
       </div>
     </div>
 
-<!-- alteracao de formulario de contato -->
+    <!-- Pré-venda -->
     <div class="row" id="pre-venda">
+      <h1 class="titulos titulo-pre-venda">Pré-venda</h1>
       <div class="content">
+
         <div class="col-2">
-          <div class="content valor-pre-venda">
-            <p>Saiba prioritariamente</p>
-            <p>Quando iniciaremos as vendas</p>
+          <div class="content form-centralizado-esquerda">
+            <img src="./img/mockup1.png" class="imagem-pre-venda" alt="">
           </div>
         </div>
 
         <div class="col-2">
-          <div class="content form-pre-venda">
-              <form action="#">
-                <input type="text" placeholder="Nome completo" name="nome" required>
-                <input type="email" placeholder="email@email.com" name="email" required>
-                <button type="submit" class="btn">Cadastrar</button>
-              </form>
+          <div class="content form-pre-venda form-centralizado-direita">
+            <form action="#">
+              <input type="text" placeholder="Nome completo" name="nome" required>
+              <input type="email" placeholder="email@email.com" name="email" required>
+              <button type="submit" class="btn">Cadastrar</button>
+            </form>
           </div>
         </div>
       </div>
     </div>
-    
+
+    <!-- Rodapé -->
     <footer class="row">
       <div class="content">
         <img src="./img/logo-cinza-claro.png" class="logo-rodape">
-        
+
         <div class="redes-sociais">
           <a href="https://www.youtube.com/">
             <img src="./img/youtube.png" alt="Youtube">
@@ -165,12 +261,13 @@
           </a>
         </div>
       </div>
-      <div class="direitos">
-        <p>Política de Privacidade</p>
-        <p>Política de Venda</p>
-        <p>Avisos Legais</p>
-      </div>
     </footer>
+
+    <div class="direitos">
+      <p>Política de Privacidade</p>
+      <p>Política de Venda</p>
+      <p>Avisos Legais</p>
+    </div>
   </div>
 
   <script src="./scripts/menu-caracteristicas.js"></script>
