@@ -294,7 +294,7 @@ h1 {
   transition: max-height 0.2s ease-out;
 }
 
-.panel p {
+.panel p, .panel ul li {
   font-family: "Poppins-regular";
   word-spacing: 1.2px;
   text-align: left;
@@ -541,4 +541,29 @@ video {
   height: 270px !important;
   border: 1px solid #194d39;
   border-radius: 4px;
+}
+
+/* Quem somos */
+.membros {
+  display: inline-block;
+  padding: 0 25px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 50px;
+  border-radius: 25px;
+  background-color: #f1f1f1;
+  margin-bottom: 15px;
+}
+
+.membros img {
+  float: left;
+  margin: 0 10px 0 -25px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.texto-quem-somos {
+  padding-bottom: 40px;
+  color: white;
 }
