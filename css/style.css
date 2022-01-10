@@ -100,7 +100,7 @@ h1 {
 .banner-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../img/fundo-home.jpeg");
-  height: 50%;
+  height: 60%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -151,6 +151,10 @@ h1 {
   width: calc((100% / 4) - 10px);
   border-radius: 4px;
   box-shadow: 4px 0px 5px #143c2c;
+}
+
+.tablink img {
+  margin-right: 10px;
 }
 
 .tablink:hover {
@@ -397,6 +401,10 @@ footer {
   display: inline-block;
 }
 
+.redes-sociais a:hover {
+  border-color: #00ff99;
+}
+
 .redes-sociais a img {
   width: 20px;
 }
@@ -552,6 +560,7 @@ video {
 
 /* Quem somos */
 #quem-somos {
+  /* display: flex; */
   width: 100%;
   background-image: url("../img/fundo.png");
   background-image: -webkit-gradient(
@@ -591,5 +600,10 @@ video {
 
 .texto-quem-somos {
   padding-bottom: 40px;
+  text-align: center;
+  width: 100%;
+  max-width: 930px;
   color: white;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
