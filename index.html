@@ -10,146 +10,295 @@
 
 <body>
 
+  <!-- Menu topo -->
   <div id="navbar">
     <div class="navbar-content">
-      <img src="./img/logo-cinza-claro.png" id="logo" />
+      <a href="#top" id="logo"><img src="./img/logo-cinza-claro.png" tabindex="0" /></a>
       <nav id="navbar-right">
-        <a href="#caracteristicas">ficha técnica</a>
-        <a href="#galeria">galeria</a>
-        <a href="#perguntas-frequentes">perguntas frequentes</a>
-        <a href="#pre-venda">pré-venda</a>
+        <a href="#especificacoes" tabindex="1">Especificações</a>
+        <a href="#galeria" tabindex="2">Galeria</a>
+        <a href="#perguntas-frequentes" tabindex="3">Perguntas frequentes</a>
+        <a href="#quem-somos" tabindex="4">Quem somos</a>
+        <a href="#pre-venda" tabindex="5">Pré-venda</a>
       </nav>
     </div>
   </div>
 
-  <div style="margin-top: 65px"></div>
-
   <div class="main">
 
-    <div class="banner-image">
+    <!-- Banner topo -->
+    <div id="topo" class="banner-image">
       <div class="banner-text">
         <h1 style="font-size: 50px">iCode</h1>
         <p>A tecnologia perfeita para codar em suas mãos!</p>
       </div>
     </div>
 
-    <div class="row" id="caracteristicas">
+    <!-- Especificações -->
+    <div class="row" id="especificacoes">
+      <h1 class="titulos">Especificações</h1>
       <div class="content">
         <div class="tablink-grop">
           <button class="tablink" onclick="openPage('camera', this)" id="defaultOpen">
+            <img src="./img/camera.png" class="imagens-especificacoes" alt="">
             Câmera
           </button>
           <button class="tablink" onclick="openPage('display', this)">
+            <img src="./img/display.png" class="imagens-especificacoes" alt="">
             Display
           </button>
           <button class="tablink" onclick="openPage('memoria', this)">
+            <img src="./img/memoria.png" class="imagens-especificacoes" alt="">
             Memória
           </button>
           <button class="tablink" onclick="openPage('bateria', this)">
+            <img src="./img/bateria.png" class="imagens-especificacoes" alt="">
             Bateria
           </button>
         </div>
 
         <div id="camera" class="tabcontent">
-          <p>Um celular com câmera quádrupla, conta com uma câmera principal de 108 megapixels
-            e gravação em até 8K em 60fps, uma câmera grande angular, uma lente com zoom de 4x e
-            uma câmera macro de 10 megapixels.</p>
+          <p>Um dos maiores diferenciais do iCode é a sua câmera: ele é composto por quatro
+            camêras, tendo um desing triangular, moderno e futurisco.</p>
+          <br>
+          <p>Entre suas principais características existe a camera principal de 108 megapixels e
+            gravação em até 8K em 90fps.</p>
+          <br>
+          <p>Nele também há uma camêra grande angular na qual você poderá tirar fotos e gravar vídeos
+            muito mais abertos, uma lente tele-objetiva usada para obter um zoom de qualidade extremamente alta a
+            câmera macro na qual você poderá obter mínimos detalhes de objetos minimamente pequenos sem perder a
+            sua qualidade.</p>
         </div>
 
         <div id="display" class="tabcontent">
-          <p>Uma tela Super AMOLED, com a melhor proteção do mercado, a Gorilla Glass Victus,
-            com 6,7 polegadas, resolução Full HD e uma taxa de atualização de 144hz.</p>
+          <p>Uma tela SUPER AMOLED de alta resistência à quedas, com uma proteção Gorilla Glass Victus,
+            a qualidade que você merece.</p>
+          <br>
+          <p>Contêm suavidez e uma quantidade maior do brilho que ajuda a ter uma boa visibilidade da sua tela
+            em qualquer ambiente, dando uma experiência de outro nível sem gastar muito da bateria do seu celular.</p>
+          <br>
+          <p>Possui um display de 6,7 polegadas e uma resolucão Full HD com 1920x1080 pixels e uma taxa de
+            atualização de 144Hz, a qualidade que faz diferença na sua tela.</p>
         </div>
 
         <div id="memoria" class="tabcontent">
-          <p>Uma memória absurda, 1T de memória interna e 12GB de memória RAM, o desafio é encher essa memória.</p>
+          <p>O celular tem um armazenamento inimaginável de 1 terabyte de memória interna que você
+            poderá ousar, guardando o quanto quiser: fotos, videos, aplicativos e muito mais. Com esse aparelho em mãos
+            você não precisará se preocupar com espaço de memória nunca mais.</p>
+          <br>
+          <p>Você pode acreditar ou não, mas o celular ainda conta com 18GB de
+            memória RAM que poderá rodar com facilidade qualquer jogo ou app de alta performance no seu celular,
+            o tipo de qualidade que só existe num iCode.</p>
         </div>
 
         <div id="bateria" class="tabcontent">
-          <p>Uma bateria de 6000mh, que pode durar até 2 dias fora do carregador, tem suporta
-            carregamento de 40v e conta com suporte para carregamento sem fio de até 25v.</p>
+          <p>Você está cansado de precisar carregar o seu celular toda hora? Pois agora não precisa mais se preocupar.
+            Com um iCode você terá uma bateria de longa duração de 6000mh.
+            Através dela você poderá passar até dois dias sem precisar carregar seu celular.</p>
+          <br>
+          <p>Além disso, o celular suporta um carregamento de até 40W e conta com suporte de carregamento sem fio de
+            até 25W.</p>
+          <br>
+          <p>Uma das melhores baterias que você pode ter atualmente!</p>
         </div>
       </div>
     </div>
 
+    <!-- Galeria -->
     <div class="row" id="galeria">
+      <h1 class="titulos">Câmera com qualidade profissional</h1>
       <div class="content">
 
-        <div class="col-2">
-          <div class="content">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1280px-Image_created_with_a_mobile_phone.png"
-              alt="Nature" style="width: 100%" />
-            <h3>My Work</h3>
-            <p>
-              Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus
-              necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor
-              sit amet, tempor prodesset eos no.
-            </p>
+        <div class="col-2 galeria-videos">
+          <div class="content content-videos">
+            <div class="col">
+              <video controls autoplay>
+                <source src="./videos/group-dancing.mp4" type="video/mp4">
+                Seu navegador não suporta ou está desabilitado para executar videos com extensão .mp4
+              </video>
+            </div>
+
+            <div class="col galeria-videos-bottom">
+              <div class="col"></div>
+            </div>
           </div>
         </div>
 
-        <div class="col-2">
-          <div class="content">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1280px-Image_created_with_a_mobile_phone.png"
-              alt="Mountains" style="width: 100%" />
-            <h3>My Work</h3>
-            <p>
-              Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus
-              necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor
-              sit amet, tempor prodesset eos no.
-            </p>
+        <div class="col-2 galeria-imagens">
+          <div class="content content-galeria">
+            <div class="col-2 galeria-imagens-esq">
+              <div class="col" style="height: 360px;"></div>
+              <div class="col" style="height: 200px;"></div>
+            </div>
+
+            <div class="col-2 galeria-imagens-dir">
+              <div class="col" style="height: 200px;"></div>
+              <div class="col" style="height: 360px;"></div>
+            </div>
           </div>
         </div>
+
       </div>
     </div>
 
+    <!-- Perguntas Frequentes -->
     <div class="row" id="perguntas-frequentes">
+      <h1 class="titulos">Perguntas frequentes</h1>
       <div class="content">
-        <button class="accordion">Section 1</button>
+        <button class="accordion">Como funciona a garantia do celular?</button>
         <div class="panel">
-          <p>Lorem ipsum...</p>
+          <br>
+          <p>Para o produto acima identificado, que a A CODE STALKERS LTDA
+            (Code Stalkers) disponibiliza no mercado brasileiro, é oferecida a garantia contra defeitos no material
+            e mão-de-obra, em condições normais de uso e manutenção, pelo prazo de 1 ano. Sendo 90 dias de garantia
+            legal e após isso inicia o prazo da garantia adicional que oferecemos aos nossos clientes.</p>
+          <br>
+          <p>A Garantia inicia a partir da data de aquisição ou da data da entrega do
+            produto, identificada pela Nota Fiscal de venda ao Consumidor Final do produto, emitida no Brasil
+            por um revendedor autorizado pela Code Stalkers.</p>
+          <br>
+          <p>Em ocasião de quedas, esmagamentos, sobrecarga elétrica, exposição do aparelho
+            a altas temperaturas, umidade ou líquidos; exposição do aparelho a poeira, ou ainda quando constatado
+            mau uso do aparelho, instalações, modificações ou atualizações no seu sistema operacional; abertura do
+            equipamento ou tentativa de conserto deste por terceiros que não sejam os técnicos da Code Stalkers, a
+            garantia
+            não poderá ser utilizada.</p>
+          <br>
         </div>
 
-        <button class="accordion">Section 2</button>
+        <button class="accordion">Qual o sistema operacional do aparelho?</button>
         <div class="panel">
-          <p>Lorem ipsum...</p>
+          <br>
+          <p>O iCode conta com o novo Android 12</p>
+          <p>Suas principais novidades:</p>
+          <br>
+          <ul>
+            <li>Captura de tela com rolagem</li>
+            <li>Pesquisas mais amplas</li>
+            <li>Novas configurações de </li>
+            <li>Fácil acesso a senhas</li>
+            <li>Otimização para jogos</li>
+            <li>Temas personalizados</li>
+            <li>Novos atalhos para configurações rápidas</li>
+            <li>Desligar câmera e microfone com um toque</li>
+            <li>Troca rápida das redes de Wi-Fi</li>
+            <li>Modo extraescuro</li>
+          </ul>
+          <br>
+          <p>Alem disso o Android 12 conta agora com um completo recurso de
+            privacidade incluindo o novo Painel de Privacidade, que exibe de forma mais clara as permissões
+            que um aplicativo tem para acessar cada tipo de dado ou função do seu dispositivo.</p>
+          <br>
         </div>
 
-        <button class="accordion">Section 3</button>
+        <button class="accordion">O que vem na caixa?</button>
         <div class="panel">
-          <p>Lorem ipsum...</p>
+          <br>
+          <p>Junto com o celular, você recebe na caixa:</p>
+          <br>
+          <ul>
+            <li>1 Carregador TurboPower 25W com entrada USB-C</li>
+            <li>1 Capa protetora</li>
+            <li>1 Ferramenta de remoção do chip</li>
+            <li>1 Fone de ouvido estéreo com entrada P2</li>
+            <li>1 1 Cabo sincronização</li>
+            <li>1 Kit de manual</li>
+          </ul>
+          <br>
+        </div>
+
+        <button class="accordion">Como faço para comprar?</button>
+        <div class="panel">
+          <br>
+          <p>Quer saber as novidades da pré-venda? Cadastre-se no formulário abaixo, assim que o aparelho for
+            lançado você será um dos primeiros a ser notificado sobre preços, formas de pagamento e tempo de entrega.
+            Venha ser um Code Stalker.
+          </p>
+          <br>
         </div>
       </div>
     </div>
 
-<!-- alteracao de formulario de contato -->
-    <div class="row" id="pre-venda">
+    <!-- Quem somos -->
+    <div class="row" id="quem-somos">
+      <h1 class="titulos">Quem somos</h1>
+      <p class="texto-quem-somos">Somos alunos do programa #OTechTaOn, da equipe de sábado, da tribo
+        Code Stalkers. Esta landing page foi um trabalho orientado por mentores da empresa Avanade, com a parceria
+        e colaboração dos professores da Imed.</p>
+      <div class="col-3">
+        <div class="membros">
+          <img src="./img/ana-clara.jpeg" alt="Person" width="96" height="96">
+          Ana Clara - (37) 9123-1063
+        </div>
+        <div class="membros">
+          <img src="./img/ana-luiza.jpeg" alt="Person" width="96" height="96">
+          Ana Luiza - (11) 98824-8308
+        </div>
+        <div class="membros">
+          <img src="./img/andressa-mendes.jpeg" alt="Person" width="96" height="96">
+          Andressa Mendes - (53) 9906-3538
+        </div>
+      </div>
+
+      <div class="col-3">
+        <div class="membros">
+          <img src="./img/igor-gabriel.jpeg" alt="Person" width="96" height="96">
+          Igor Gabriel - (81) 8762-0254
+        </div>
+        <div class="membros">
+          <img src="./img/jonh-lennon.jpg" alt="Person" width="96" height="96">
+          Jonh Lennon - (96) 9130-0890
+        </div>
+        <div class="membros">
+          <img src="./img/jose-eugenio.jpeg" alt="Person" width="96" height="96">
+          José Eugênio - (81) 8269-1872
+        </div>
+      </div>
+
+      <div class="col-3">
+        <div class="membros">
+          <img src="./img/kaiky.jpeg" alt="Person" width="96" height="96">
+          Kaiky Guizelini - (19) 98950-9498
+        </div>
+        <div class="membros">
+          <img src="./img/kaylane-nascimento.jpeg" alt="Person" width="96" height="96">
+          Kaylane Nascimento - (62) 8329-8440
+        </div>
+        <div class="membros">
+          <img src="./img/paullynna-figueiredo.jpeg" alt="Person" width="96" height="96">
+          Paullynna Figueiredo - (96) 8125-3637
+        </div>
+      </div>
+    </div>
+
+    <!-- Pré-venda -->
+    <div class="row fixo" id="pre-venda">
+      <h1 class="titulos titulo-pre-venda">Pré-venda</h1>
       <div class="content">
+
         <div class="col-2">
-          <div class="content valor-pre-venda">
-            <p>Saiba prioritariamente</p>
-            <p>Quando iniciaremos as vendas</p>
+          <div class="content form-centralizado-esquerda">
+            <img src="./img/mockup1.png" class="imagem-pre-venda" alt="">
           </div>
         </div>
 
         <div class="col-2">
-          <div class="content form-pre-venda">
-              <form action="#">
-                <input type="text" placeholder="Nome completo" name="nome" required>
-                <input type="email" placeholder="email@email.com" name="email" required>
-                <button type="submit" class="btn">Cadastrar</button>
-              </form>
+          <div class="content form-pre-venda form-centralizado-direita">
+            <form action="#">
+              <input type="text" placeholder="Nome completo" name="nome" required>
+              <input type="email" placeholder="email@email.com" name="email" required>
+              <button type="submit" class="btn">Cadastrar</button>
+            </form>
           </div>
         </div>
       </div>
     </div>
-    
+
+    <!-- Rodapé -->
     <footer class="row">
       <div class="content">
         <img src="./img/logo-cinza-claro.png" class="logo-rodape">
-        
+
         <div class="redes-sociais">
           <a href="https://www.youtube.com/">
             <img src="./img/youtube.png" alt="Youtube">
@@ -165,12 +314,12 @@
           </a>
         </div>
       </div>
-      <div class="direitos">
-        <p>Política de Privacidade</p>
-        <p>Política de Venda</p>
-        <p>Avisos Legais</p>
-      </div>
     </footer>
+    <div class="direitos">
+      <p>Política de Privacidade</p>
+      <p>Política de Venda</p>
+      <p>Avisos Legais</p>
+    </div>
   </div>
 
   <script src="./scripts/menu-caracteristicas.js"></script>
