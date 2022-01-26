@@ -140,7 +140,7 @@ h1 {
 }
 
 .tablink {
-  background-color: #383e42;
+  background-color:#272934;
   color: white;
   float: left;
   border: 1px solid #707c78;
@@ -254,7 +254,7 @@ h1 {
 
 /* Menu accordion */
 .accordion {
-  background-color: #00ff99c9;
+  background-color: #00e78bc9;
   color: #000000;
   cursor: pointer;
   padding: 18px auto;
@@ -272,7 +272,7 @@ h1 {
 
 .active,
 .accordion:hover {
-  background-color: #02f292;
+  background-color: #00e78be0;
   color: #21262d;
 }
 
@@ -350,7 +350,7 @@ input[type="email"]:focus {
 }
 
 .btn {
-  background-color: #00ff99;
+  background-color: #00e78b;
   color: #21262d;
   padding: 16px 20px;
   border: none;
@@ -361,7 +361,7 @@ input[type="email"]:focus {
 }
 
 .btn:hover {
-  opacity: 1;
+  background-color: #11f89c;
 }
 
 /* Rodapé */
@@ -402,7 +402,7 @@ footer {
 }
 
 .redes-sociais a:hover {
-  border-color: #00ff99;
+  border-color: #00e78b;
 }
 
 .redes-sociais a img {
@@ -476,7 +476,7 @@ div.form-centralizado-direita {
 .content-galeria .col-2 div,
 .galeria-imagens {
   color: #fff;
-  border: 1px solid #00ff99;
+  border: 1px solid #00e78b;
   border-radius: 4px;
   margin: 5px;
 }
@@ -528,11 +528,11 @@ div.form-centralizado-direita {
   background-position: center;
   background-size: cover;
   height: 275px;
-  border: 1px solid #00ff99;
+  border: 1px solid #00e78b;
 }
 
 .galeria-videos {
-  border: 1px solid #00ff99;
+  border: 1px solid #00e78b;
   border-radius: 4px;
 }
 
@@ -554,7 +554,7 @@ div.form-centralizado-direita {
 video {
   width: 100%;
   height: 270px !important;
-  border: 1px solid #00ff99;
+  border: 1px solid #00e78b;
   border-radius: 4px;
 }
 
@@ -582,12 +582,21 @@ video {
   display: inline-block;
   padding: 0 25px;
   height: 50px;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 50px;
   border-radius: 25px;
   background-color: #f1f1f1;
   margin-bottom: 15px;
   width: 95%;
+}
+
+.membros:hover {
+  background: #525252;
+  color: #00e78b;
+  font-size: 16px;
+  text-decoration: inherit;
+  transform: scale(1.05);
+  transition: transform 0.3ms;
 }
 
 .membros img {
@@ -596,6 +605,8 @@ video {
   height: 50px;
   width: 50px;
   border-radius: 50%;
+  width: 96;
+  height: 96;
 }
 
 .texto-quem-somos {
@@ -606,4 +617,8 @@ video {
   color: white;
   margin: 0 auto;
   margin-bottom: 20px;
+}
+
+.col-3 a {
+  color: black;
 }

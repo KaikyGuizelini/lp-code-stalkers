@@ -1,4 +1,4 @@
-function openPage(pageName, elmnt, color="#293136") {
+function openPage(pageName, elmnt, color="#383e42") {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
